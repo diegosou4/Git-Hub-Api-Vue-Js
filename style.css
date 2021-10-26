@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI" , sans-serif;
+}
+
+body {
+    background: #1C1F28;
+    width: 100%;
+    height: 90%;
+}
+.container.normal {
+    width: 1800px;
+    height: 80%;
+    background:  rgba(29, 32, 41, 1);
+    margin: auto;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.container {
+    width: 1800px;
+    height: 1000px;
+    background:  rgba(29, 32, 41, 1);
+    margin: auto;
+    mix-blend-mode: normal;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.divimage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+
+}
+
+h1 {
+    color: white;
+    font-style: normal;
+    font-size: 36px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 25px;
+}
+
+.input-search {
+    margin: auto;
+    background: #1B1B1B;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 21.8px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 20px
+    
+}
+
+.user-img {
+    display: grid;
+    justify-content: start;
+}
+
+.user-img img{
+    grid-column: 1;
+    margin-left: 100px;
+    width: 300px;
+    height: 300px;
+    clip-path: circle(50% at 50% 50%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 4px 2px 2px rgba(41, 35, 54, 0.37);
+}
+
+
+.user-infos {
+    grid-column: 2;
+    margin: auto;
+    font-size: 30px;
+    margin-left: 30px;
+    color: rgba(255, 255, 255, 1);
+    font-style: normal;
+}
+
+.user-infos p{
+    font-size: 22px;
+ 
+}
+
+.repository {
+    text-align: center;
+    
+}
+.container-box {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+
+    margin-top: 30px;
+}
+.repository-box {
+    margin: auto;
+    width: 366px;
+    height: 75%;
+    background: #1B1B1B;
+    border-radius: 10px 10px;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
+
+.repository-box:hover{
+    box-shadow: 0px 4px 4px rgb(255, 255, 255), 4px 2px 2px rgb(235, 235, 235);
+    text-decoration: none;
+
+
+}
+
+
+.repository-name {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 1);
+    font-family: "Segoe UI" , sans-serif;
+    cursor: pointer;
+    text-decoration: none;
+    width: 100%
+}
+
+.repository-description {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
+}

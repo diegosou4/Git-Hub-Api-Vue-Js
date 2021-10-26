@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="vue.min.js"></script>
+    <title>Api Git Hub</title>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    <section class="container" :class="{normal : gitUser}" id="app">
+      <div class="divimage">
+        <img class="logo" src="./img/mark-github.png" alt="Logo Git Hub Rosa">
+      </div>
+    
+      <h1 class="title">Git Hub Api</h1>
+      <input class="input-search" type="text" id="idgit" placeholder="Digite o nome do usuario" @keyup.enter="callId">
+      <div div v-if="gitUser">
+        <div class="user-img">
+          <img :src="repos[0].owner.avatar_url">
+    
+          <div class="user-infos">
+            <h1>{{info.name}}</h1>
+            <p>Localização: {{info.location}}</p>
+            <p>Biografia: {{info.bio}}</p>
+          </div>
+    
+        </div>
+
+        <div class="repository" v-if="repositoryIsok">
+          <h1>Total de repositorios: {{info.public_repos}}</h1>
+        </div>
+        <div class="container-box">
+          <div v-for="repositorio in repos">
+            <a :href="repositorio.html_url" target="_blank" style="text-decoration:none">
+              <div class="repository-box">
+                <h2 class="repository-name">{{repositorio.name}}</h2><br>
+                <p class="repository-description">{{repositorio.description}}</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        </div>
+    </section>
+    <script src="./app/app.js"></script>
+</body>
+</html>
